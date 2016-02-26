@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'microbench.Main'
+
+repositories {
+    jcenter()
+    maven {
+      url 'http://clojars.org/repo'
+    }
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.14'
+    compile 'criterium:criterium:0.4.4'
+    compile 'org.clojure:clojure:1.8.0'
+    testCompile 'junit:junit:4.12'
+}
